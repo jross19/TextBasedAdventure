@@ -13,7 +13,7 @@ void printInventory(int index, string inventory[])
 
 void path3(string inventory[])
 {
-	cout << "test";
+	cout << "test" << endl;
 }
 
 void path2(string inventory[])
@@ -35,7 +35,7 @@ void path2(string inventory[])
 		cout << "Your inventory currently contains:\n";
 		printInventory(2, inventory);
 	}
-	cout << "What would you like to do next?: \n(1) Kill Yourself\n(2) Continue";
+	cout << "What would you like to do next?: \n(1) Kill Yourself\n(2) Continue: ";
 	cin >> choice2;
 	if (choice2 == 1)
 	{
