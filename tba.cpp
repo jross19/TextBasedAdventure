@@ -11,9 +11,35 @@ void printInventory(int index, string inventory[])
 	cout << endl;
 }
 
+void path4(string inventory[])
+{
+	cout << "test";
+}
+
 void path3(string inventory[])
 {
-	cout << "test" << endl;
+	int choice;
+	cout << "You Have Chosen to Continue, You May Regret That..." << endl;
+	cout << "You approach a wild worm, what do you want to do?" << endl;
+	cout << "Ignore it, it is puny and weak(1)\nAttack it, it deserves to die(2)\nKill Yourself(3): ";
+	cin >> choice;
+	while (choice< 1 || choice > 3)
+	{
+		cout << "\nthat is not a valid option, please try again...";
+	}
+	if (choice == 3)
+	{
+		cout << "\nYou use the " << inventory[0] << "to end your miserable life" << endl;
+	}
+	if (choice == 2)
+	{
+		cout << "\nYou pick up the worm and snap his puny neck" << endl;
+		path4(inventory);
+	}
+	if (choice == 1)
+	{
+		cout << "\nYou walk past the worm, but it suddenly grows to be 7000ft in length, which he uses to strangle you to death";
+	}
 }
 
 void path2(string inventory[])
