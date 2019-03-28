@@ -21,7 +21,7 @@ void path3(string inventory[])
 	int choice;
 	cout << "You Have Chosen to Continue, You May Regret That..." << endl;
 	cout << "You approach a wild worm, what do you want to do?" << endl;
-	cout << "Ignore it, it is puny and weak(1)\nAttack it, it deserves to die(2)\nKill Yourself(3): ";
+	cout << "(1) Ignore it, it is puny and weak\n(2) Attack it, it deserves to die\n(3) Kill Yourself\n What Would You Like to do?: ";
 	cin >> choice;
 	while (choice< 1 || choice > 3)
 	{
@@ -29,7 +29,7 @@ void path3(string inventory[])
 	}
 	if (choice == 3)
 	{
-		cout << "\nYou use the " << inventory[0] << "to end your miserable life" << endl;
+		cout << "\nYou use the " << inventory[0] << " to end your miserable life" << endl;
 	}
 	if (choice == 2)
 	{
@@ -38,7 +38,7 @@ void path3(string inventory[])
 	}
 	if (choice == 1)
 	{
-		cout << "\nYou walk past the worm, but it suddenly grows to be 7000ft in length, which he uses to strangle you to death";
+		cout << "\nYou walk past the worm, but it suddenly grows to be 7000ft in length, which he uses to strangle you to death\n";
 	}
 }
 
@@ -63,6 +63,11 @@ void path2(string inventory[])
 	}
 	cout << "What would you like to do next?: \n(1) Kill Yourself\n(2) Continue: ";
 	cin >> choice2;
+	while (choice2< 1 || choice2 > 3)
+	{
+		cout << "\nthat is not a valid option, please try again...";
+		cin >> choice2;
+	}
 	if (choice2 == 1)
 	{
 		cout << "You point the gun at yourself and end your life quickly" << endl;
